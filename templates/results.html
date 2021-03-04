@@ -4,12 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Review Page</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
-      <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Review Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 
 </head>
@@ -17,25 +13,15 @@
 <body>
 
   <div class="table-users">
-   <div class="header">Reviews</div>
+   <div class="header">Flipkart Review Scrapper</div>
+      </div>
+  <div>
+      <div class="header">Product - {{result}}</div>
+      <div class="header">No. of reviews found  - {{total}}</div>
+<div class="header"><a href="/static/{{result}}.csv" target="_blank"  style="margin-right: 5px;">Download CSV file </a>
+</div>
 
-   <table cellspacing="0">
-      <tr>
-         <th>Product</th>
-         <th>Name</th>
-         <th>Rating</th>
-         <th>Comment Heading</th>
-         <th width="230">Comments</th>
-      </tr>
-         {% for review in reviews %}
-      <tr>
-          <td>{{review['Product']}}</td>
-         <td>{{review['Name']}}</td>
-         <td>{{review['Rating']}}</td>
-         <td>{{review['CommentHead']}}</td>
-         <td>{{review['Comment']}} </td>
-       {% endfor %}
-   </table>
+
 </div>
 
 
