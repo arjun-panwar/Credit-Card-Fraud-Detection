@@ -12,8 +12,12 @@ from flask_cors import CORS,cross_origin
 app = Flask(__name__)
 
 
-@app.route('/', methods=['POST', 'GET'])  # route with allowed methods as POST and GET
+def homePage():
+    return render_template("index.html")
+
+@app.route('/',methods=['POST','GET']) # route to show the review comments in a web UI
 @cross_origin()
+
 def index():
     if request.method == 'POST':
         searchString = request.form['content'].replace(" ", "")  # obtaining the search string entered in the form
