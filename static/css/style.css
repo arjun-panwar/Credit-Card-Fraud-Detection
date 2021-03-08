@@ -27,7 +27,7 @@ img {
   max-width: calc(100% - 2em);
   margin: 1em auto;
   overflow: hidden;
-  width: 800px;
+  width: 700px;
 }
 
 table {
@@ -51,13 +51,13 @@ table th {
   font-weight: 300;
 }
 table tr:nth-child(2n) {
-  background-color: white;
+  background-color: black;
 }
 table tr:nth-child(2n+1) {
   background-color: #edf7f8;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   table, tr, td {
     display: block;
   }
