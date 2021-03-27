@@ -240,3 +240,5 @@
 2021-03-27/16:10:08		Start of Validation on files for prediction!!
 2021-03-27/16:10:40		Start of Validation on files for prediction!!
 2021-03-27/16:12:20		Start of Validation on files for prediction!!
+2021-03-27/16:40:57		Start of Validation on files for prediction!!
+2021-03-27/16:41:23		Start of Validation on files for prediction!!

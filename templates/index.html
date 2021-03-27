@@ -200,7 +200,7 @@
 					type: "POST",
 					data: {filepath:path},
 					success: function(response){
-						$(".json-result").html('<p>"Prediction File created !!!</p><a href="/static/Prediction_Output_File/Predictions.csv" target="_blank"  download style="margin-right: 5px;"><h2 style="text-align: center">Download Prediction</h2></a><pre>' +  + '</pre>');
+						$(".json-result").html('<p>Prediction File created !!</p><a href="/static/Prediction_Output_File/Predictions.csv" target="_blank"  download style="margin-right: 5px;"><h2 style="text-align: center">Download Prediction</h2></a><pre>' +  + '</pre>');
 						$('#loading').hide();
 					}
 				});
