@@ -131,7 +131,7 @@
 						</div>
 						<div class=""><button class="form-control btn-primary" id="customfile">Custom File Predict</button></div>
 						<br/><center><b>Or</b></center><br/>
-						<button class="form-control btn-primary mb-5" id="defaultfile" data-path = "Prediction_Batch_files">
+						<button class="form-control btn-primary mb-5" id="defaultfile" data-path = "/static/Prediction_Batch_files">
 							Default File Predict
 						</button>
 					</form>
@@ -200,8 +200,7 @@
 					type: "POST",
 					data: {filepath:path},
 					success: function(response){
-						$(".json-result").html('<p>"Prediction File created !!!</p><div text-align: center; class="center"><a href="/Prediction_Output_File/Predictions.csv" target="_blank"  download style="margin-right: 5px;"><h2 style="text-align: center">Download Certificate</h2></a>
-</div><pre>' + response + '</pre>');
+						$(".json-result").html('<p>"Prediction File created !!!</p><a href="/static/Prediction_Output_File/Predictions.csv" target="_blank"  download style="margin-right: 5px;"><h2 style="text-align: center">Download Prediction</h2></a><pre>' +  + '</pre>');
 						$('#loading').hide();
 					}
 				});
