@@ -177,7 +177,7 @@
 			$('#loading').hide();
 			$("#customfile").click(function(e){
 				e.preventDefault();
-				$('#loading').show();
+
 				var path = $("#csvfile").val();
 				$.ajax({
 					//change url below
@@ -192,7 +192,7 @@
 			});
 			$("#defaultfile").click(function(e){
 				e.preventDefault();
-				$('#loading').show();
+
 				var path = $(this).attr("data-path");
 				$.ajax({
 					//change url below
