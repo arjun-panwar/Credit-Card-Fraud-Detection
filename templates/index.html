@@ -185,7 +185,7 @@
 					type: "POST",
 					data: {filepath:path},
 					success: function(response){
-						$(".json-result").html('<p>"Prediction File created at !!!Prediction_Output_File/Predictions.csvand few of the predictions are"</p><pre>' + response + '</pre>');	
+						$(".json-result").html('<p>"Prediction File created at !!!Prediction_Output_File/Predictions.csv and few of the predictions are"</p><pre>' + response + '</pre>');	
 						$('#loading').hide();
 					}
 				});
@@ -200,7 +200,8 @@
 					type: "POST",
 					data: {filepath:path},
 					success: function(response){
-						$(".json-result").html('<p>"Prediction File created !!!</p><pre>' + response + '</pre>');
+						$(".json-result").html('<p>"Prediction File created !!!</p><div text-align: center; class="center"><a href="/Prediction_Output_File/Predictions.csv" target="_blank"  download style="margin-right: 5px;"><h2 style="text-align: center">Download Certificate</h2></a>
+</div><pre>' + response + '</pre>');
 						$('#loading').hide();
 					}
 				});
