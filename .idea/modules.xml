@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/certificate.iml" filepath="$PROJECT_DIR$/.idea/certificate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/creditCardFraud.iml" filepath="$PROJECT_DIR$/.idea/creditCardFraud.iml" />
     </modules>
   </component>
 </project>
